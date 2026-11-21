@@ -15,7 +15,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Copy entry.png to /output/entry.png
-src = "/home/hatch/workspace/makefun/work/the-catalogue-photo-of-an-2-20261121-0341/entry.png"
+src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "entry.png")
 dst = "/output/entry.png"
 
 try:
